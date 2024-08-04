@@ -1,0 +1,118 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eaee78;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #dfe9d6;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.step {
+    margin: 20px 0;
+}
+
+.step h2 {
+    color: #555;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.step textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    resize: none;
+    background-color: #c4c7c0;
+    display: flex;
+    
+}
+
+.step-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.step-results textarea {
+    width: 90%;
+    max-width: 600px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    margin: 20px auto;
+}
+
+.arrow img {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+    .step-results {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .step-results textarea {
+        width: 45%;
+    }
+}
+
+@media (min-width: 992px) {
+    .step h2 {
+        font-size: 1.75em;
+    }
+
+    button {
+        font-size: 1.1em;
+    }
+}

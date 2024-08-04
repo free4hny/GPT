@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT Interface Comparison</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GPT Interface Comparison</h1>
+        
+        <div class="step">
+            <h2>Step 1: Enter your Prompt</h2>
+            <textarea id="userPrompt" rows="4" placeholder="Enter your prompt here..." oninput="autoResize(this)"></textarea>
+            <button onclick="submitPrompt()">Submit</button>
+        </div>
+
+        <div class="arrow">
+            <img src="https://media.istockphoto.com/id/1362875627/vector/red-arrow-down-icon-direction-cursor-sign-navigation-concept-realistic-design-vector.jpg?s=1024x1024&w=is&k=20&c=WeN3FJIHCYx4TixNUxW6TmHM9UB0NTvCfPDdremdmL8=" alt="Arrow">
+        </div>
+
+        <div class="step">
+            <h2>Step 2: Prompt Supply</h2>
+            <div class="step-results">
+                <textarea id="gpt1Prompt" readonly rows="10" cols="50" oninput="autoResize(this)"></textarea>
+                <textarea id="gpt2Prompt" readonly  rows="10" cols="50" oninput="autoResize(this)"></textarea>
+            </div>
+        </div>
+
+        <div class="arrow">
+            <img src="https://media.istockphoto.com/id/1362875627/vector/red-arrow-down-icon-direction-cursor-sign-navigation-concept-realistic-design-vector.jpg?s=1024x1024&w=is&k=20&c=WeN3FJIHCYx4TixNUxW6TmHM9UB0NTvCfPDdremdmL8=" alt="Arrow">
+        </div>
+
+        <div class="step">
+            <h2>Step 3: Results</h2>
+            <div class="step-results">
+                <textarea id="gpt1Result" readonly rows="10" cols="50" oninput="autoResize(this)"></textarea>
+                <textarea id="gpt2Result" readonly rows="10" cols="50" oninput="autoResize(this)"></textarea>
+            </div>
+        </div>
+
+        <div class="arrow">
+            <img src="https://media.istockphoto.com/id/1362875627/vector/red-arrow-down-icon-direction-cursor-sign-navigation-concept-realistic-design-vector.jpg?s=1024x1024&w=is&k=20&c=WeN3FJIHCYx4TixNUxW6TmHM9UB0NTvCfPDdremdmL8=" alt="Arrow">
+        </div>
+
+        <div class="step">
+            <h2>Step 4: Comparison</h2>
+            <textarea id="comparisonResult" readonly rows="6" cols="50" oninput="autoResize(this)"></textarea>
+        </div>
+
+        <div class="arrow">
+            <img src="https://media.istockphoto.com/id/1362875627/vector/red-arrow-down-icon-direction-cursor-sign-navigation-concept-realistic-design-vector.jpg?s=1024x1024&w=is&k=20&c=WeN3FJIHCYx4TixNUxW6TmHM9UB0NTvCfPDdremdmL8=" alt="Arrow">
+        </div>
+
+        <div class="step">
+            <h2>Step 5: Winner</h2>
+            <textarea id="winnerResult" readonly oninput="autoResize(this)"></textarea>
+        </div>
+
+        <div class="arrow">
+            <img src="https://media.istockphoto.com/id/1362875627/vector/red-arrow-down-icon-direction-cursor-sign-navigation-concept-realistic-design-vector.jpg?s=1024x1024&w=is&k=20&c=WeN3FJIHCYx4TixNUxW6TmHM9UB0NTvCfPDdremdmL8=" alt="Arrow">
+        </div>
+
+        <div class="step">
+            <h2>Step 6: Optimized Result</h2>
+            <textarea id="finalResult" rows="8" cols="50" readonly ></textarea><br>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
